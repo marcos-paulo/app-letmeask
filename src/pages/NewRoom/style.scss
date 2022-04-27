@@ -1,0 +1,131 @@
+// newRoom
+.main-content-new-room {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+
+  // border: 1px solid black;
+
+
+
+  >.header-new-room {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: flex-end;
+    // border: 1px solid black;
+  }
+
+  >.body-new-room {
+    // border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 320px;
+    align-items: stretch;
+    text-align: center;
+
+    >img {
+      align-self: center;
+    }
+
+    h2 {
+      font-size: 24px;
+      margin: 64px 0 24px;
+      font-family: "Poppins", sans-serif;
+    }
+
+    .create-room {
+      margin-top: 64px;
+      height: 50px;
+      border-radius: 8px;
+      font-weight: 500;
+      background: #ea4335;
+      color: #fff;
+      padding: 5px;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      cursor: pointer;
+      border: 0;
+
+      >img {
+        margin-right: 8px;
+      }
+
+      transition: filter 0.2s;
+
+      &:hover {
+        filter: brightness(0.9);
+      }
+
+      &:active {
+        filter: brightness(0.7);
+      }
+    }
+
+    .separetor {
+      font-size: 14px;
+      color: #a8a8b3;
+      margin: 32px 0;
+      display: flex;
+      align-items: center;
+
+      &::before {
+        content: "";
+        flex: 1;
+        height: 1px;
+        background: #a8a8b3;
+        margin-right: 16px;
+      }
+
+      &::after {
+        content: "";
+        flex: 1;
+        height: 1px;
+        background: #a8a8b3;
+        margin-left: 16px;
+      }
+    }
+
+    form {
+      input {
+        height: 50px;
+        border-radius: 8px;
+        padding: 0 16px;
+        background: #fff;
+        border: 1px solid #a8a8b3;
+      }
+
+      button {
+        margin-top: 16px;
+      }
+
+      button,
+      input {
+        width: 100%;
+      }
+    }
+
+    p {
+      font-size: 14px;
+      color: #737380;
+      margin-top: 16px;
+
+      a {
+        color: #e559f9;
+      }
+    }
+  }
+
+  .footer-new-room {
+    // border: 1px solid black;
+    width: 100%;
+    height: 50px;
+  }
+}
