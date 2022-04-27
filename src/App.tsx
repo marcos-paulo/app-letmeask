@@ -1,7 +1,14 @@
-import React from "react";
+import { BrowserRouter } from "react-router-dom";
 
-function App() {
-  return <h1>Helo Word</h1>;
-}
+import { AuthContextProvider } from "./contexts/AuthContextProvider";
+import { SystemRoutes } from "./routes/index.routes";
+
+const App = () => (
+  <BrowserRouter>
+    <AuthContextProvider>
+      <SystemRoutes />
+    </AuthContextProvider>
+  </BrowserRouter>
+);
 
 export default App;
