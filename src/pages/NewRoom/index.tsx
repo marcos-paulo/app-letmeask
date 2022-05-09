@@ -1,13 +1,13 @@
-import { Link, useNavigate } from "react-router-dom";
-import { Button } from "../../components/Button";
-import logoImg from "../../assets/images/logo.svg";
-import "./style.scss";
+import { Link, useNavigate } from 'react-router-dom';
+import { Button } from '../../components/Button';
+import logoImg from '../../assets/images/logo.svg';
+import './style.scss';
 
 export function NewRoom() {
   const navigate = useNavigate();
 
   function signOutHandler() {
-    navigate("/");
+    navigate('/');
   }
 
   return (

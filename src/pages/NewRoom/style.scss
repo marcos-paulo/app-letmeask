@@ -9,9 +9,7 @@
 
   // border: 1px solid black;
 
-
-
-  >.header-new-room {
+  > .header-new-room {
     display: flex;
     width: 100%;
     flex-direction: row;
@@ -19,7 +17,7 @@
     // border: 1px solid black;
   }
 
-  >.body-new-room {
+  > .body-new-room {
     // border: 1px solid black;
     display: flex;
     flex-direction: column;
@@ -28,14 +26,14 @@
     align-items: stretch;
     text-align: center;
 
-    >img {
+    > img {
       align-self: center;
     }
 
     h2 {
       font-size: 24px;
       margin: 64px 0 24px;
-      font-family: "Poppins", sans-serif;
+      font-family: 'Poppins', sans-serif;
     }
 
     .create-room {
@@ -54,7 +52,7 @@
       cursor: pointer;
       border: 0;
 
-      >img {
+      > img {
         margin-right: 8px;
       }
 
@@ -77,7 +75,7 @@
       align-items: center;
 
       &::before {
-        content: "";
+        content: '';
         flex: 1;
         height: 1px;
         background: #a8a8b3;
@@ -85,7 +83,7 @@
       }
 
       &::after {
-        content: "";
+        content: '';
         flex: 1;
         height: 1px;
         background: #a8a8b3;

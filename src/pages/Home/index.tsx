@@ -1,15 +1,15 @@
-import logoImg from "../../assets/images/logo.svg";
-import googleIconImg from "../../assets/images/google-icon.svg";
-import { Button } from "../../components/Button";
-import { useNavigate } from "react-router-dom";
+import logoImg from '../../assets/images/logo.svg';
+import googleIconImg from '../../assets/images/google-icon.svg';
+import { Button } from '../../components/Button';
+import { useNavigate } from 'react-router-dom';
 
-import "./style.scss";
+import './style.scss';
 
 export function Home() {
   const navigate = useNavigate();
 
   async function handleCreateRoom() {
-    navigate("/rooms/new");
+    navigate('/rooms/new');
   }
 
   return (

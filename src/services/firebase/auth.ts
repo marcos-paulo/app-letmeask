@@ -1,4 +1,4 @@
-import "./firebase";
-import { getAuth } from "firebase/auth";
+import './firebase';
+import { getAuth } from 'firebase/auth';
 
 const auth = getAuth();
