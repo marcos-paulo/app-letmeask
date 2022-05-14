@@ -2,12 +2,14 @@ import { Link, useNavigate } from 'react-router-dom';
 import { Button } from '../../components/Button';
 import logoImg from '../../assets/images/logo.svg';
 import './style.scss';
+import { useAuthContext } from '../../hooks/useAuthContext';
 
 export function NewRoom() {
+  const { signOut } = useAuthContext();
   const navigate = useNavigate();
 
   function signOutHandler() {
-    navigate('/');
+    signOut(() => navigate('/'));
   }
 
   return (

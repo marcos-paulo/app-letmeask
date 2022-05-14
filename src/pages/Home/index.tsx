@@ -4,11 +4,16 @@ import { Button } from '../../components/Button';
 import { useNavigate } from 'react-router-dom';
 
 import './style.scss';
+import { useAuthContext } from '../../hooks/useAuthContext';
 
 export function Home() {
+  const { user, signIn } = useAuthContext();
   const navigate = useNavigate();
 
   async function handleCreateRoom() {
+    if (!user) {
+      await signIn();
+    }
     navigate('/rooms/new');
   }
 
